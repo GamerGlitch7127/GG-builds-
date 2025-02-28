@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Build Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PC Build Advisor</h1>
+    </header>
+    <main>
+        <h2>Find the Best CPU & GPU for Your Budget</h2>
+        <form id="pc-form">
+            <label for="budget">Enter Your Budget ($):</label>
+            <input type="number" id="budget" name="budget" required>
+
+            <label for="purpose">Select Your Purpose:</label>
+            <select id="purpose" name="purpose">
+                <option value="gaming">Gaming</option>
+                <option value="editing">Video Editing</option>
+                <option value="streaming">Streaming</option>
+            </select>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
